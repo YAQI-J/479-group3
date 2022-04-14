@@ -6,4 +6,4 @@ tar -xvf shakespeare.tar
 
 cat shakespeare*/* >> allWords.txt
 
-split -n 5 allWords.txt "splited."
+split -n 5 -a 2 -d allWords.txt "splited."
