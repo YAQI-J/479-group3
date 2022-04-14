@@ -1,5 +1,7 @@
 #!/bin/bash
 
-sed -e ':a;N;$!ba;s/\t/ /g' -e 's/ /\n/g' splited.$1 > seded.$1
+mkdir log error output
 
-sort seded.$1 >sorted.$1
+cat splited.$1 |
+tr -s '[[:punct:][:space:]]' '\n' |
+sort > sorted.$1
