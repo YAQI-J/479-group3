@@ -1,6 +1,6 @@
-#log    =    log/shakespeare-chtc_$(Cluster)_$(proc).log
-#error  =  error/shakespeare-chtc_$(Cluster)_$(proc).err
-#output = output/shakespeare-chtc_$(Cluster)_$(proc).out
+log    =    log/shakespeare-chtc_$(Cluster)_$(proc).log
+error  =  error/shakespeare-chtc_$(Cluster)_$(proc).err
+output = output/shakespeare-chtc_$(Cluster)_$(proc).out
 
 universe = vanilla
 proc=$INT(Process,%02d)
@@ -10,7 +10,7 @@ arguments = $(proc)
 
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = splited.$(proc)
+transfer_input_files =splited.$(proc)
 
 request_cpus = 1
 request_memory = 1GB
