@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 wget https://pages.stat.wisc.edu/~jgillett/479/CHTC/wordCounting/shakespeare.tar
 
